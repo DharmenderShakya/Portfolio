@@ -1,0 +1,30 @@
+<div class="work-container bg-light text-gray-600">
+    <div class="container p-4">
+     
+  
+      <!-- Container for projects -->
+      <div class="row">
+        <!-- Grid Item -->
+        <h1 class="text-4xl font-bold inline border-b-4 text-gray-600 border-pink-600">
+          Work
+        </h1>
+        <p class="py-4">// Check out some of my recent work</p>
+        <div class="col-md-4" *ngFor="let item of project">
+          <div class="card shadow-lg group rounded-md mt-5">
+            <img [src]="item.image" class="card-img-top" alt="Project Image" style="object-fit: contain;">
+            <!-- Hover effect for images -->
+            <div class="overlay1">
+              <h2 class="text-2xl font-bold text-white tracking-wider text-center mt-5">{{ item.name }}</h2>
+              <div class="pt-4 text-center">
+                <a [href]="item.github" target="_blank" class="btn btn-primary btn-lg m-2">Code</a>
+                <a [href]="item.live" target="_blank" class="btn btn-primary btn-lg m-2">Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Uncomment the line below to add a "And many More ..." message -->
+      <!-- <p class="p-4">And many More ...</p> -->
+    </div>
+  </div>
+  

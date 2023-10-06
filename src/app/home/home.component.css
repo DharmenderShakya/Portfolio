@@ -1,0 +1,17 @@
+.weight{
+    font-weight: 600;
+}
+.text-danger{
+    font-weight: 600;
+}
+.home-container{
+    height: 100vh;
+width: 100%;    
+}
+/* .text{
+    padding-left: 400px;
+} */
+.row{
+    margin-left: 20%;
+    width: 80%;
+}

@@ -1,0 +1,20 @@
+<div class="skills-container bg-light text-gray-600 py-5">
+    <div class="container p-4">
+
+      <div class="row">
+        <h1 class="text-4xl font-bold inline border-b-4 border-pink-600 col-4 col-md-3 mb-4">Skills</h1>
+        <p class="py-4 ">// These are the technologies I've worked with</p>
+        <div class="col-4 col-md-3 mb-4" *ngFor="let skill of skills" style="width: 260px;">
+          <!-- <div class="card shadow-md shadow-dark hover-scale pl-0" style="height: 200px; width: 250px;">
+            <img [src]="skill.image" alt="{{ skill.name }} icon" class="mx-auto">
+            <p class="my-4">{{ skill.name }}</p>
+          </div> -->
+          <div class="card shadow pl-0">
+            <img class="mx-auto" src="{{ skill.image }}" alt="{{ skill.name }} icon" style="height: 80px;" />
+            <p class="my-4">{{ skill.name }}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
